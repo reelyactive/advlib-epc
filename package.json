@@ -1,0 +1,40 @@
+{
+  "name": "advlib-epc",
+  "homepage": "https://github.com/reelyactive/advlib-epc/",
+  "author": {
+    "name": "reelyActive",
+    "email": "info@reelyactive.com"
+  },
+  "description": "Decoding library for Electronic Product Codes of Gen 2 RFID tags based on the EPC Tag Data Standard.  We believe in an open Internet of Things.",
+  "keywords": [
+    "reelyActive",
+    "EPC",
+    "Electronic Product Code",
+    "Tag Data Standard",
+    "Gen 2 RFID",
+    "RAIN RFID",
+    "payload processor",
+    "library"
+  ],
+  "version": "0.1.0",
+  "engines": {
+    "node": ">=6.0.0"
+  },
+  "main": "./lib/advlibepc.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/reelyactive/advlib-epc.git"
+  },
+  "dependencies": {
+  },
+  "devDependencies": {
+    "mocha": "^6.0.0"
+  },
+  "bugs": {
+    "url": "https://github.com/reelyactive/advlib-epc/issues"
+  },
+  "contributors": [
+    { "name": "Jeffrey Dungen" }
+  ],
+  "license": "MIT"
+}
