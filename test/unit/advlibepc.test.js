@@ -17,7 +17,7 @@ const INPUT_DATA_SGTIN_96 = '3074257bf7194e4000001a85';
 // Expected outputs for the scenario
 const EXPECTED_DATA_INVALID_INPUT = null;
 const EXPECTED_DATA_SGTIN_96 = {
-    uri: "urn:epc:tag:sgtin-96:3.0614141.812345.6789"
+    uri: "urn:epc:tag:sgtin-96:0614141.812345.6789"
 }
 
 
