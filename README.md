@@ -6,6 +6,40 @@ Decoding library for Electronic Product Codes of Gen 2 RFID tags based on the EP
 __advlib-epc__ is a lightweight [Node.js package](https://www.npmjs.com/package/advlib-epc) that implements EPC URI processing based on the EPC Tag Data Standard.
 
 
+Installation
+------------
+
+    npm install advlib-epc
+
+
+Hello advlib-epc!
+-----------------
+
+```javascript
+const advlib = require('advlib-epc');
+
+let binaryEPC = '3074257bf7194e4000001a85';
+
+let processedEPC = advlib.processEPC(binaryEPC);
+
+console.log(processedEPC);
+```
+
+Which should yield the following console output:
+
+    { uri: "urn:epc:tag:sgtin-96:3.0614141.812345.6789" }
+
+
+Supported Schemes
+-----------------
+
+The following EPC schemes are supported by __advlib-epc__.
+
+| Scheme   | Name                                |
+|:---------|:------------------------------------|
+| SGTIN-96 | Serialised Global Trade Item Number |
+
+
 Contributing
 ------------
 
