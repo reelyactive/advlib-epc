@@ -1,7 +1,9 @@
 advlib-epc
 ==========
 
-Decoding library for Electronic Product Codes of Gen 2 RFID tags based on the EPC Tag Data Standard (TDS).
+Decoding library for Electronic Product Codes of Gen 2 RFID tags based on the EPC Tag Data Standard (TDS).  __advlib-epc__ can be used standalone, or as part of the [barnacles](https://github.com/reelyactive/barnacles/) module of [Pareto Anywhere](https://www.reelyactive.com/pareto/anywhere/) open source IoT middleware which supports various RAIN RFID readers.
+
+![Overview of advlib-epc](https://reelyactive.github.io/advlib-epc/images/overview.png)
 
 __advlib-epc__ is a lightweight [Node.js package](https://www.npmjs.com/package/advlib-epc) that implements EPC URI processing based on the EPC Tag Data Standard.
 
