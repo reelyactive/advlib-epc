@@ -11,6 +11,7 @@ const assert = require ('assert');
 // Input data for the scenario
 const INPUT_DATA_INVALID_EPC = '0123';
 const INPUT_DATA_SGTIN_96 = '3074257bf7194e4000001a85';
+const INPUT_DATA_STID = 'e2801191a5030065e3ec9069';
 
 
 
@@ -19,6 +20,7 @@ const EXPECTED_DATA_INVALID_INPUT = null;
 const EXPECTED_DATA_SGTIN_96 = {
     uri: "urn:epc:tag:sgtin-96:0614141.812345.6789"
 }
+const EXPECTED_DATA_STID = null;
 
 
 // Describe the scenario
@@ -39,6 +41,12 @@ describe('advlib-epc', function() {
   it('should handle valid SGTIN-96 data as input', function() {
     assert.deepEqual(advlib.processEPC(INPUT_DATA_SGTIN_96),
                      EXPECTED_DATA_SGTIN_96);
+  });
+
+  // Test the process function with a valid STID
+  it('should handle valid STID data as input', function() {
+    assert.deepEqual(advlib.processEPC(INPUT_DATA_STID),
+                     EXPECTED_DATA_STID);
   });
 
 });
